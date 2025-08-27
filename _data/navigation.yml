@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Chapters"
+    url: /chapters/
+  - title: "Notes"
+    url: /notes/
+  - title: "About"
+    url: /about/

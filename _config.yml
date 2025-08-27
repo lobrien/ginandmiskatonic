@@ -1,0 +1,74 @@
+title: Gin & Miskatonic
+description: Notes, chapters, artifacts, and research from the in‑progress novel.
+url: https://ginandmiskatonic.com
+baseurl: ""
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark"
+
+# Plugins (all are whitelisted for GitHub Pages via github-pages gem)
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+timezone: Pacific/Honolulu
+
+# Search
+search: true
+
+# Navigation
+collections:
+  chapters:
+    output: true
+    permalink: /chapter/:title/
+  notes:
+    output: true
+    permalink: /notes/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: single
+      toc: true
+      author_profile: false
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single
+      toc: true
+      author_profile: false
+  - scope:
+      path: ""
+    values:
+      layout: single
+
+# Author (optional profile box on /about)
+author:
+  name: "G&M"
+  avatar: /assets/images/avatar.png
+  bio: "Field notes from a 1926 New England of rum‑runners, Jesuit scholars, and impossible artifacts."
+  location: "New England, 1926"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/lobrien/"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:you@example.com"
+
+# Taxonomy
+tag_archive:
+  type: liquid
+  path: /tags/
+category_archive:
+  type: liquid
+  path: /categories/
