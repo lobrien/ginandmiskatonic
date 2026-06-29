@@ -1,0 +1,19 @@
+---
+permalink: /.well-known/security.txt
+layout: none
+---
+
+# Contact information for security vulnerabilities
+Contact: mailto:security@ginandmiskatonic.com
+
+# Link to your encryption key (PGP/GPG) if you have one
+Encryption: https://ginandmiskatonic.com/pgp-key.txt
+
+# Link to your security policy
+# Policy: https://yourdomain.com/security-policy/
+
+# Preferred language for reports
+Preferred-Languages: en
+
+# Expiration date for this file (highly recommended; usually 6–12 months out)
+Expires: 2027-06-30T12:00:00.000Z
